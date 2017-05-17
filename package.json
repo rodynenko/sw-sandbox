@@ -1,0 +1,25 @@
+{
+  "name": "sw-sandbox",
+  "version": "0.1.0",
+  "description": "Service Workers sandbox - using cache when no network",
+  "main": "app.js",
+  "engines": {
+    "node": "6.9.*"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "service",
+    "workers"
+  ],
+  "author": "Taras Rodynenko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-stylus-middleware": "^0.1.2",
+    "pug": "^2.0.0-rc.1"
+  },
+  "devDependencies": {}
+}
