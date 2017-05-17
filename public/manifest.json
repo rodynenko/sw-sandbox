@@ -1,0 +1,11 @@
+{
+  "name": "SWSandbox",
+  "short_name": "SWSandbox",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "green",
+  "description": "A simply PWA",
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
