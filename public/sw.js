@@ -17,6 +17,7 @@ function preCache() {
       '/i/img1.jpg',
       '/i/img2.jpg',
       '/i/img3.jpg',
+      '/css/style.css'
     ]);
   });
 }
