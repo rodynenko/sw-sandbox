@@ -5,7 +5,10 @@
   "display": "standalone",
   "background_color": "green",
   "description": "A simply PWA",
-  "related_applications": [{
-    "platform": "web"
-  }]
+  "icons": [{
+    "src": "i/48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }],
+  "related_applications": false
 }
