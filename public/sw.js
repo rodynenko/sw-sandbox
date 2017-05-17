@@ -26,7 +26,9 @@ function fromCache(request){
   return caches.open(CACHE).then(function(cache){
     return cache.match(request).then(function(matching){
       if (matching) return matching;
-      return fetch(request);
+      // why we clone request - https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
+      var fetchRequest = request.clone();
+      return update(fetchRequest);
     });
   });
 }
@@ -34,7 +36,8 @@ function fromCache(request){
 function update(request){
   return caches.open(CACHE).then(function(cache){
     return fetch(request).then(function(responce){
-      return cache.put(request, responce);
+      cache.put(request, responce);
+      return responce;
     });
   });
 }
