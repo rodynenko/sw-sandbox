@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const expressStylus = require('express-stylus-middleware');
 
-app.set('port', process.env.port || 3000);
+app.set('port', process.env.PORT || 3000);
 app.use('/css', expressStylus(__dirname + '/stylus-css/', { compress: true}));
 app.use(express.static('public'));
 app.set('views', "./views");
